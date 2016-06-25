@@ -1,0 +1,107 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none !important;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: sans-serif;
+  font-size: 12px;
+  background: #111;
+  /*cursor: pointer;*/ }
+
+footer {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  right: 0;
+  height: 15%;
+  width: 200px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: -100px;
+  text-align: center;
+  z-index: 3;
+  -webkit-transition: .3s;
+  transition: .3s; }
+  footer.active {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px); }
+
+#canvas {
+  position: absolute;
+  z-index: 1; }
+
+#canvas2 {
+  position: absolute;
+  z-index: 2; }
+
+.mouse {
+  position: absolute;
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+  background: url(../img/mouse.svg) no-repeat center;
+  background-size: 100%;
+  opacity: .5;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: 0.3s cubic-bezier(0.5, 0, 0.6, 1.5);
+  transition: 0.3s cubic-bezier(0.5, 0, 0.6, 1.5);
+  bottom: 10%;
+  left: 50%;
+  margin-left: -25px; }
+  .mouse:hover {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+
+aside {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  text-align: center;
+  padding: 15px;
+  color: #777; }
+  aside input {
+    display: block;
+    width: 100%; }
+  aside label {
+    font-weight: bold; }
+  aside input {
+    -webkit-appearance: none;
+    margin: 18px 0;
+    width: 100%; }
+  aside input:focus {
+    outline: none; }
+  aside input::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: #777; }
+  aside input::-webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10px;
+    -webkit-transition: .2s;
+    transition: .2s; }
+    aside input::-webkit-slider-thumb:hover {
+      background: #47a; }
+  aside input:focus::-webkit-slider-runnable-track {
+    background: #47a; }
+  aside .span {
+    display: inline-block;
+    width: 40%; }
