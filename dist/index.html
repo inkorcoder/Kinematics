@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kinematics</title>
+	<link rel="stylesheet" href="css/skin.min.css">
+</head>
+<body>
+
+	<canvas id="canvas"></canvas>
+
+	<aside>
+		<div class="span">
+			<label for="type">Behavior</label>
+			<select id="type">
+				<option value="auto">auto</option>
+				<option value="mouse">mouse</option>
+			</select>
+		</div>
+		<div class="span">
+			<label for="x">X-speed</label>
+			<select id="x">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="4" selected>4</option>
+				<option value="8">8</option>
+				<option value="16">16</option>
+			</select>
+		</div>
+		<div class="span">
+			<label for="gravity">Gravity</label>
+			<select id="gravity">
+				<option value="0.01">0.01</option>
+				<option value="0.05">0.05</option>
+				<option value="0.1">0.1</option>
+				<option value="0.5" selected>0.5</option>
+				<option value="1">1</option>
+			</select>
+		</div>
+	</aside>
+
+	<script src="js/ball.min.js"></script>
+	<script src="js/arm.min.js"></script>
+	<script src="js/iksystem.min.js"></script>
+	<script src="js/main.min.js"></script>
+
+</body>
+</html>
